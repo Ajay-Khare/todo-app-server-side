@@ -5,8 +5,10 @@ const task = require("../models/task")
 const jwt = require('jsonwebtoken');
 router.use(express.json())
 const bcrypt = require('bcrypt');
-const authentication = require("../Athentication/auth")
+const cors = require("cors")
 
+const authentication = require("../Athentication/auth")
+router.use(cors())
 
 router.get("/", (req, res) => {
     res.send("hello from router")

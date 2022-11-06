@@ -11,7 +11,7 @@ app.use(express.json());
 // app.use(bodyParser())
 
 
-var mongoDB = 'mongodb+srv://Ajay:ajay@cluster0.69nrddt.mongodb.net/todo?retryWrites=true&w=majority';
+var mongoDB = 'mongodb+srv://Ajay:ajay@cluster0.69nrddt.mongodb.net/todoApp?retryWrites=true&w=majority';
 mongoose.connect(mongoDB, { useNewUrlParser: true }, (err) => {
     if (err) {
         console.log(err.message)
